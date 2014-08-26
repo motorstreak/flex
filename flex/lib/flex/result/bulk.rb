@@ -8,11 +8,11 @@ module Flex
       end
 
       def failed
-        self['items'].reject{|i| i['index']['ok']}
+        self['items'].reject{|i| i['index']['status'].between?(200,226) }
       end
 
       def successful
-        self['items'].select{|i| i['index']['ok']}
+        self['items'].select{|i| i['index']['status'].between?(200,226) }
       end
 
     end
