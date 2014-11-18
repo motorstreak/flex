@@ -15,10 +15,8 @@ Gem::Specification.new do |s|
   s.rdoc_options              = %w[--charset=UTF-8]
   s.license                   = 'MIT'
 
-  s.add_runtime_dependency 'rails', '>=2.0'
-
-  s.add_runtime_dependency 'flex',        version
-  s.add_runtime_dependency 'flex-models', version
-
-  s.add_runtime_dependency 'prompter', '~> 0.1.5'
+  s.add_runtime_dependency 'rails',       '>=2.0'
+  s.add_runtime_dependency 'flex',        '>= 1.0.6'
+  s.add_runtime_dependency 'flex-models', '>= 1.0.6'
+  s.add_runtime_dependency 'prompter',    '~> 0.1.5'
 end

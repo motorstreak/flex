@@ -15,6 +15,5 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = ">= 1.3.6"
   s.rdoc_options              = %w[--charset=UTF-8]
   s.license                   = 'MIT'
-
-  s.add_runtime_dependency 'flex', version
+  s.add_runtime_dependency 'flex', '>= 1.0.6'
 end
