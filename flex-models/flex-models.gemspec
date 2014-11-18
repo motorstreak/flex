@@ -15,8 +15,8 @@ Gem::Specification.new do |s|
   s.rdoc_options              = %w[--charset=UTF-8]
   s.license                   = 'MIT'
 
-  s.add_runtime_dependency 'flex',        version
-  s.add_runtime_dependency 'flex-scopes', version
+  s.add_runtime_dependency 'flex',        '>= 1.0.6'
+  s.add_runtime_dependency 'flex-scopes', '>= 1.0.6'
 
   s.add_runtime_dependency 'active_attr', '>= 0.6.0'
 end
