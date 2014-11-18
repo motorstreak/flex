@@ -57,7 +57,8 @@ module Flex
       models.each do |model|
         raise ArgumentError, "The model #{model.name} is not a standard Flex::ModelIndexer model" \
               unless model.include?(Flex::ModelIndexer)
-        index = model.flex.index
+        # index = model.flex.index
+        index = model.respond_to?(:flex_index) ? model.flex_index : model.flex.index
         index = LiveReindex.prefix_index(index) if LiveReindex.should_prefix_index?
 
         # block never called during live-reindex, since it doesn't exist
